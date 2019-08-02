@@ -3,8 +3,4 @@ node_modules
 *.d.ts
 *.js
 *.js.map
-output
-cyclops_registries
-server
-mod_assets
-registries
+mods.json
