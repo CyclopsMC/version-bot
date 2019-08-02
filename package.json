@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "cyclops-version-bot",
+  "version": "1.0.0",
+  "description": "Detects new Cyclops mod versions",
+  "main": "index.js",
+  "repository": "git@github.com:CyclopsMC/version-bot.git",
+  "bugs": {
+    "url": "https://github.com/CyclopsMC/version-bot/issues"
+  },
+  "homepage": "https://github.com/CyclopsMC/version-bot#readme",
+  "author": "Ruben Taelman <rubensworks@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "bin/**/*.d.ts",
+    "bin/**/*.js",
+    "lib/**/*.d.ts",
+    "lib/**/*.js",
+    "index.d.ts",
+    "index.js"
+  ],
+  "pre-commit": [
+    "build",
+    "lint"
+  ],
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "tslint": "^5.16.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "lint": "tslint index.ts lib/**/*.ts test/**/*.ts bin/**/*.ts --exclude '**/*.d.ts'",
+    "build": "tsc",
+    "build-watch": "tsc --watch",
+    "validate": "npm ls",
+    "prepare": "npm run build"
+  }
+}
