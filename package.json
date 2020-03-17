@@ -43,6 +43,6 @@
     "@types/minimist": "^1.2.0",
     "@types/node": "^12.6.9",
     "isomorphic-fetch": "^2.2.1",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.2"
   }
 }
